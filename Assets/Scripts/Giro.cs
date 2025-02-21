@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Giro : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float degrees;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,6 +13,6 @@ public class Giro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate (Vector3.up, speed * Time.deltaTime);
+        transform.Rotate (Vector3.up, degrees * Time.deltaTime);
     }
 }
